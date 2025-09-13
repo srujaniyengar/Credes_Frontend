@@ -1,0 +1,123 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-section {
+  text-align: center;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -2px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 0 1.5rem 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+}
+
+.api-button {
+  background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.api-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+  background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+}
+
+.api-button:active {
+  transform: translateY(0);
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.api-endpoints {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Courier New', monospace;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  
+  .hero-section {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .footer {
+    padding: 1rem;
+  }
+  
+  .api-endpoints {
+    font-size: 0.7rem;
+    word-break: break-all;
+  }
+}
